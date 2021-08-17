@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Distance calculator</title>
+{% endblock %}
+
+{% block body %}
+<div class="col-lg-6">
+    <div class="contact-form pt-30">
+        <div class="form">
+            <form id="contact-form" action="/calc" method="POST">
+                <div class="single-form">
+                    <input type="text" name="address" id="address"
+                           placeholder="Enter the address which you want for calculated">
+                </div> <!-- single form -->
+                <p class="form-message"></p>
+                <div class="single-form">
+                    <button class="main-btn" type="submit">Calculate the Distance</button>
+                </div> <!-- single form -->
+            </form>
+        </div> <!-- contact form -->
+    </div>
+</div>
+
+
+{% endblock %}

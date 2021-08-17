@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Unfold - Personal Portfolio & CV Template</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png')}}" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css')}}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
